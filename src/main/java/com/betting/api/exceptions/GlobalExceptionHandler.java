@@ -17,7 +17,7 @@ import java.util.Map;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(Exception.class)
+    @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<HttpErrorResponse> handleValidationExceptions(MethodArgumentNotValidException ex,
                                                                         WebRequest request) {
         Map<String, String> errors = new HashMap<>();
