@@ -1,5 +1,7 @@
 package com.betting.api.dto;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;
 import lombok.Data;
 
@@ -9,6 +11,7 @@ import javax.validation.constraints.NotNull;
 
 @Data
 @Builder
+@Schema(name = "BettingRequest", description = "Request object for placing bet")
 public class BettingRequest {
 
     @NotNull

@@ -3,7 +3,6 @@ package com.betting.api.service;
 import com.betting.api.dto.BettingRequest;
 import com.betting.api.util.RandomNumberGenerator;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
