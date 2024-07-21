@@ -14,7 +14,7 @@ public class BettingService {
 
 
     public Double calculateWinning(BettingRequest bettingRequest) {
-        Integer randomNumber = RandomNumberGenerator.generate(1, 100);
+        Integer randomNumber = RandomNumberGenerator.generate(1, 99);
         log.debug("Random number generated is : [{}]", randomNumber);
         if (randomNumber < bettingRequest.getBetNumber()) {
             return 0.0;

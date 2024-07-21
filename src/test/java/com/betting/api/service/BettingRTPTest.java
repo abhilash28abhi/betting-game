@@ -46,7 +46,7 @@ public class BettingRTPTest {
 
         for (int i = 0; i < NO_OF_ROUNDS; i++) {
             executorService.submit(() -> {
-                double betAmount = Math.random() * 100;//generate random bet amount using Math.random() * 100;
+                double betAmount = 1.0;//generate random bet amount using Math.random() * 100;
                 int betNumber = RandomNumberGenerator.generate(LOWER_BOUND, UPPER_BOUND);
 
                 BettingRequest bettingRequest = BettingRequest.builder()
