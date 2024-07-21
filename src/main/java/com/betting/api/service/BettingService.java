@@ -24,7 +24,7 @@ public class BettingService {
 
     private Double calculateWin (double bet, int betNumber) {
         // Calculate win based on the given formula
-        double win = bet * (99 / (100.0 - betNumber));
+        Double win = bet * (99 / (100.0 - betNumber));
         log.debug("Win value is : [{}]", win);
         // Round to 2 decimal places
         BigDecimal roundedWin = BigDecimal.valueOf(win).setScale(2, RoundingMode.HALF_UP);

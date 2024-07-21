@@ -19,6 +19,6 @@ public class BettingRequest {
 
     @NotNull
     @Min(1)
-    @Max(100)
+    @Max(99)
     Integer betNumber;
 }

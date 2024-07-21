@@ -48,7 +48,7 @@ public class BettingController {
             @ApiResponse(responseCode = "500", description = "Internal Server error",
                     content = @Content(schema = @Schema(
                             implementation = HttpErrorResponse.class)))})
-    @PostMapping(value = "/play", consumes = APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/bet", consumes = APPLICATION_JSON_VALUE)
     public ResponseEntity<String> createBet (@RequestBody @Validated BettingRequest bettingRequest) {
         log.debug("creating bet for [{}], [{}]", bettingRequest.getBetNumber(), bettingRequest.getBetAmount());
         return ResponseEntity.ok(String.valueOf(bettingService.calculateWinning(bettingRequest)));
