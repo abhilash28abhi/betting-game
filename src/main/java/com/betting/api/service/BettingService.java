@@ -17,6 +17,7 @@ public class BettingService {
         Integer randomNumber = RandomNumberGenerator.generate(1, 99);
         log.debug("Random number generated is : [{}]", randomNumber);
         if (randomNumber < bettingRequest.getBetNumber()) {
+            log.debug("Random number generated is less than the bet number, returning 0 as win");
             return 0.0;
         }
         return calculateWin(bettingRequest.getBetAmount(), bettingRequest.getBetNumber());
