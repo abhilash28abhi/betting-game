@@ -1,7 +1,7 @@
 package com.betting.api;
 
 import com.betting.api.dto.PlayerRequest;
-import com.betting.api.util.RandomNumberGenerator;
+import com.betting.api.utils.RandomNumberGenerator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;

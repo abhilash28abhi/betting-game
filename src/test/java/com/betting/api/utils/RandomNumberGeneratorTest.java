@@ -1,4 +1,4 @@
-package com.betting.api.util;
+package com.betting.api.utils;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

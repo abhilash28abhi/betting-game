@@ -1,4 +1,4 @@
-package com.betting.api.util;
+package com.betting.api.utils;
 
 
 import java.util.Random;

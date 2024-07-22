@@ -1,7 +1,7 @@
-package com.betting.api.service;
+package com.betting.api.services;
 
 import com.betting.api.dto.BettingRequest;
-import com.betting.api.util.RandomNumberGenerator;
+import com.betting.api.utils.RandomNumberGenerator;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

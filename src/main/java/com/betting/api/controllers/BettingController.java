@@ -1,9 +1,9 @@
-package com.betting.api.controller;
+package com.betting.api.controllers;
 
 
 import com.betting.api.dto.BettingRequest;
 import com.betting.api.errors.HttpErrorResponse;
-import com.betting.api.service.BettingService;
+import com.betting.api.services.BettingService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

@@ -1,7 +1,7 @@
-package com.betting.api.controller;
+package com.betting.api.controllers;
 
 import com.betting.api.dto.BettingRequest;
-import com.betting.api.service.BettingService;
+import com.betting.api.services.BettingService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
